@@ -1,0 +1,17 @@
+{
+  "name": "MyReactNativeApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build-ios":"react-native bundle --entry-file index.js  --platform ios --dev false --bundle-output ./ios/bundle/index.ios.jsbundle --assets-dest ./ios/bundle"
+  },
+  "dependencies": {
+    "ant-design": "^1.0.0",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-native-gesture-handler": "^1.0.14",
+    "react-native-linear-gradient": "^2.5.4",
+    "react-navigation": "^3.4.1"
+  }
+}

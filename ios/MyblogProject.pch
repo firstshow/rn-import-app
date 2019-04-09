@@ -1,0 +1,76 @@
+//
+//  MyblogProject.pch
+//  my-blog-project
+//
+//  Created by 张城 on 2018/1/16.
+//  Copyright © 2018年 张城. All rights reserved.
+//
+
+#ifndef MyblogProject_pch
+#define MyblogProject_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Masonry.h"
+#import "HexColor.h"
+
+/**
+ 以下是一些变量的定义
+ */
+
+// 屏幕尺寸
+#define ScreenHeight    [[UIScreen mainScreen] bounds].size.height
+#define ScreenWidth     [[UIScreen mainScreen] bounds].size.width
+#define Width           self.view.frame.size.width
+#define Height          self.view.frame.size.height
+
+// 屏幕判定
+#define IS_IPHONE4  ([SDiPhoneVersion deviceSize] == iPhone35inch ? YES : NO)
+#define IS_IPHONE5  ([SDiPhoneVersion deviceSize] == iPhone4inch ? YES : NO)
+#define IS_IPHONE6  ([SDiPhoneVersion deviceSize] == iPhone47inch ? YES : NO)
+#define IS_IPHONE6P ([SDiPhoneVersion deviceSize] == iPhone55inch ? YES : NO)
+#define KIsiPhoneX  ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// 6宽高比例
+#define WidthScale       (ScreenWidth / 375)
+
+// 顶部状态栏的高度，iphoneX手机40，其他型号是20
+#define StateBarHeight (KIsiPhoneX ? 40 : 20)
+
+#define NavigationBarHeight 44
+
+// 标题字体大小
+#define TitleFont (16*ScreenWidth / 375)
+
+// 副标题字体大小
+#define SubTitleFont (14*ScreenWidth / 375)
+
+// 普通字体
+#define NomalFont  (16*ScreenWidth / 375)
+
+
+
+/**
+ 以下是一些常量的定义
+ */
+
+// 主题色
+static NSString *const ThemeColor = @"#92d0c5";
+
+// 主题色
+static NSString *const BackColor = @"#ebebeb";
+
+// 字体颜色
+static NSString *const TitleColor = @"#333333";
+
+// 默认的字体颜色
+static NSString *const NomalColor = @"#666666";
+
+// 副标题字体颜色
+static NSString *const SubTitleColor = @"#999999";
+
+// 不可点击按钮的颜色
+static NSString *const DisabledColor = @"#ccc";
+
+#endif /* MyblogProject_pch */
