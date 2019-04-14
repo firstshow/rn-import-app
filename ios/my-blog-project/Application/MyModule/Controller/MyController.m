@@ -13,6 +13,8 @@
 #import <React/RCTRootView.h>
 #import <React/RCTBridgeModule.h>
 #import "CustomViewController.h"
+#import "CodePush.h"
+
 @interface MyController()<RCTBridgeModule>
 
 @property (nonatomic, strong) MyView *myView;
@@ -96,9 +98,12 @@
                            @"http://foo.com/bar2.png"];
 
     NSDictionary *props = @{@"images" : imageList};
-
-//    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
-    NSURL *jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"bundle/index.ios" withExtension:@"jsbundle"];
+    
+    NSURL *jsCodeLocation = [CodePush bundleURLForResource:@"bundle/index.ios" withExtension:@"jsbundle"];
+    
+#ifdef DEBUG
+    jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
+#endif
 
     RCTRootView *rootView =
     [[RCTRootView alloc] initWithBundleURL: jsCodeLocation

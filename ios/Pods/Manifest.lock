@@ -1,13 +1,21 @@
 PODS:
+  - Base64 (1.1.2)
   - boost-for-react-native (1.63.0)
   - BVLinearGradient (2.5.4):
     - React
+  - CodePush (5.6.0):
+    - Base64 (~> 1.1)
+    - JWT (~> 3.0.0-beta.7)
+    - React
+    - SSZipArchive (~> 2.1)
   - DoubleConversion (1.1.5)
   - Folly (2016.09.26.00):
     - boost-for-react-native
     - DoubleConversion
     - glog
   - glog (0.3.4)
+  - JWT (3.0.0-beta.11):
+    - Base64 (~> 1.1.2)
   - React (0.55.4):
     - React/Core (= 0.55.4)
   - React/Core (0.55.4):
@@ -49,10 +57,12 @@ PODS:
     - React/RCTBlob
   - RNGestureHandler (1.0.14):
     - React
+  - SSZipArchive (2.1.4)
   - yoga (0.55.4.React)
 
 DEPENDENCIES:
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
+  - CodePush (from `../node_modules/react-native-code-push`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
@@ -70,11 +80,16 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Base64
     - boost-for-react-native
+    - JWT
+    - SSZipArchive
 
 EXTERNAL SOURCES:
   BVLinearGradient:
     :path: "../node_modules/react-native-linear-gradient"
+  CodePush:
+    :path: "../node_modules/react-native-code-push"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   Folly:
@@ -89,15 +104,19 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: 8cbc5155c978f2e43098818c91d206d07aae6d30
+  CodePush: 284402fb7418973c3f24a0a9cf0d1d48d96a97c8
   DoubleConversion: e22e0762848812a87afd67ffda3998d9ef29170c
   Folly: 211775e49d8da0ca658aebc8eab89d642935755c
   glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
+  JWT: 05028b9624591bba9681bb57df2c5f95fa258bad
   React: 755b16d9a9387e856d4dce6528130c51e4d409b8
   RNGestureHandler: a42452479897bf68a55a5df4dd779520b0b56afb
+  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
   yoga: c3ce6137f85f60c93a834235d7f08e2b44a42eed
 
-PODFILE CHECKSUM: 8264fa062d92a387b29508ac3d6ae94e463de7dc
+PODFILE CHECKSUM: 1a6db4ed41357a34aa3d6a6cfcce0a372a789de1
 
 COCOAPODS: 1.7.0.beta.3

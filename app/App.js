@@ -9,6 +9,8 @@ import HomeScreen from "./pages/Home/index"
 import BillDetailScreen from "./pages/BillDetail/index"
 import { themeStyles } from './styles/theme'
 import { computeSize } from './styles/computeSize'
+import codePush from "react-native-code-push";
+
 // 二级导航
 const MainScreen = createStackNavigator({
     Home: HomeScreen,
@@ -46,11 +48,13 @@ const styles = StyleSheet.create({
 
 let Root = createAppContainer(MainScreen)
 
-
-
 export default class App extends Component {
     constructor(props) {
         super(props)
+    }
+
+    componentDidMount () {
+        codePush.sync()
     }
 
     render () {
