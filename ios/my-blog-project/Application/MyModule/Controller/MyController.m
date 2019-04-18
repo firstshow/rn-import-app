@@ -99,11 +99,13 @@
 
     NSDictionary *props = @{@"images" : imageList};
     
-    NSURL *jsCodeLocation = [CodePush bundleURLForResource:@"bundle/index.ios" withExtension:@"jsbundle"];
+    NSURL *jsCodeLocation = [CodePush bundleURLForResource:@"bundle/main" withExtension:@"jsbundle"];
+
+    // NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
     
-#ifdef DEBUG
-    jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
-#endif
+//#ifdef DEBUG
+//    jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
+//#endif
 
     RCTRootView *rootView =
     [[RCTRootView alloc] initWithBundleURL: jsCodeLocation

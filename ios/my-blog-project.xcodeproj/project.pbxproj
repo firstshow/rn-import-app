@@ -11,6 +11,10 @@
 		3724EEEC225CCF4F008B4348 /* index.jsbundle.meta in Resources */ = {isa = PBXBuildFile; fileRef = 3724EEE9225CCF4E008B4348 /* index.jsbundle.meta */; };
 		3724EEED225CCF4F008B4348 /* index.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 3724EEEA225CCF4E008B4348 /* index.jsbundle */; };
 		3724EEEE225CCF4F008B4348 /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3724EEEB225CCF4E008B4348 /* bundle */; };
+		3725F1D52268AB3400E70B59 /* libbz2.1.0.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725F1D42268AB3400E70B59 /* libbz2.1.0.5.tbd */; };
+		3725F1D72268AB4300E70B59 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725F1D62268AB4200E70B59 /* libc++.tbd */; };
+		3725F1D92268AB5100E70B59 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725F1D82268AB5100E70B59 /* libsqlite3.0.tbd */; };
+		3725F1DB2268ABAC00E70B59 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725F1DA2268ABAC00E70B59 /* libCodePush.a */; };
 		3747D8EC200DD84200D52082 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3747D8EB200DD84200D52082 /* AppDelegate.m */; };
 		3747D8F4200DD84200D52082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3747D8F3200DD84200D52082 /* Assets.xcassets */; };
 		3747D8FA200DD84200D52082 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3747D8F9200DD84200D52082 /* main.m */; };
@@ -61,6 +65,11 @@
 		3724EEE9225CCF4E008B4348 /* index.jsbundle.meta */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.jsbundle.meta; sourceTree = "<group>"; };
 		3724EEEA225CCF4E008B4348 /* index.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.jsbundle; sourceTree = "<group>"; };
 		3724EEEB225CCF4E008B4348 /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
+		3725F1D22268AAD900E70B59 /* libCodePush.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCodePush.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3725F1D42268AB3400E70B59 /* libbz2.1.0.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.5.tbd; path = usr/lib/libbz2.1.0.5.tbd; sourceTree = SDKROOT; };
+		3725F1D62268AB4200E70B59 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3725F1D82268AB5100E70B59 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3725F1DA2268ABAC00E70B59 /* libCodePush.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCodePush.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3747D8E7200DD84200D52082 /* my-blog-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-blog-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3747D8EA200DD84200D52082 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3747D8EB200DD84200D52082 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -140,6 +149,7 @@
 		37FFABE8225E26D1001F42F0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		37FFABEB225E26DC001F42F0 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
 		46E40DF8C398479D8F050499 /* libRCTHotUpdate.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTHotUpdate.a; sourceTree = "<group>"; };
+		4934B353EA2AC51C528A9F29 /* Pods-my-blog-project.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-blog-project.staging.xcconfig"; path = "Target Support Files/Pods-my-blog-project/Pods-my-blog-project.staging.xcconfig"; sourceTree = "<group>"; };
 		7546EECEDBB957862DE30B6F /* Pods-my-blog-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-blog-project.release.xcconfig"; path = "Target Support Files/Pods-my-blog-project/Pods-my-blog-project.release.xcconfig"; sourceTree = "<group>"; };
 		AF3AC4B564F058AA7A44342C /* Pods-my-blog-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-blog-project.debug.xcconfig"; path = "Target Support Files/Pods-my-blog-project/Pods-my-blog-project.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BE03AFED4A682446A186A4 /* libPods-my-blog-project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-my-blog-project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +160,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3725F1DB2268ABAC00E70B59 /* libCodePush.a in Frameworks */,
+				3725F1D92268AB5100E70B59 /* libsqlite3.0.tbd in Frameworks */,
+				3725F1D72268AB4300E70B59 /* libc++.tbd in Frameworks */,
+				3725F1D52268AB3400E70B59 /* libbz2.1.0.5.tbd in Frameworks */,
 				38B231CE1D9E1A933A462715 /* libPods-my-blog-project.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +174,11 @@
 		336A1BCA71963A85BBBC674D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3725F1D82268AB5100E70B59 /* libsqlite3.0.tbd */,
+				3725F1DA2268ABAC00E70B59 /* libCodePush.a */,
+				3725F1D62268AB4200E70B59 /* libc++.tbd */,
+				3725F1D42268AB3400E70B59 /* libbz2.1.0.5.tbd */,
+				3725F1D22268AAD900E70B59 /* libCodePush.a */,
 				37FFABEB225E26DC001F42F0 /* libbz2.1.0.tbd */,
 				37FFABE8225E26D1001F42F0 /* libz.tbd */,
 				D4BE03AFED4A682446A186A4 /* libPods-my-blog-project.a */,
@@ -546,6 +565,7 @@
 				37C388CF200E023800E7E9AC /* Target Support Files */,
 				AF3AC4B564F058AA7A44342C /* Pods-my-blog-project.debug.xcconfig */,
 				7546EECEDBB957862DE30B6F /* Pods-my-blog-project.release.xcconfig */,
+				4934B353EA2AC51C528A9F29 /* Pods-my-blog-project.staging.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -719,6 +739,79 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		3725F1D02268691F00E70B59 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODEPUSH_DEPLOYMENT_KEY = "afqk49NRa1Czzsfb963InLOVKIcQ97ebed02-f289-433b-a079-4199a723bdb0";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		3725F1D12268691F00E70B59 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7546EECEDBB957862DE30B6F /* Pods-my-blog-project.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5BGKWE8LV;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyBlogProject.pch";
+				INFOPLIST_FILE = "my-blog-project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "dtgfzc.my-blog-project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Staging;
+		};
 		3747D911200DD84200D52082 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -834,12 +927,14 @@
 				DEVELOPMENT_TEAM = X5BGKWE8LV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyBlogProject.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "COCOAPODS=1";
 				INFOPLIST_FILE = "my-blog-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
+				MTL_ENABLE_DEBUG_INFO = NO;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "dtgfzc.my-blog-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -862,84 +957,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
+				MTL_ENABLE_DEBUG_INFO = YES;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "dtgfzc.my-blog-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
-		};
-		374B93452263270E005524CF /* staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODEPUSH_DEPLOYMENT_KEY = "DkZMPqCvJQpnZwB_k_tgKuDdmjAt97ebed02-f289-433b-a079-4199a723bdb0";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = staging;
-		};
-		374B93462263270E005524CF /* staging */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7546EECEDBB957862DE30B6F /* Pods-my-blog-project.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X5BGKWE8LV;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/MyBlogProject.pch";
-				INFOPLIST_FILE = "my-blog-project/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				NEW_SETTING = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "dtgfzc.my-blog-project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = staging;
 		};
 /* End XCBuildConfiguration section */
 
@@ -949,7 +973,7 @@
 			buildConfigurations = (
 				3747D911200DD84200D52082 /* Debug */,
 				3747D912200DD84200D52082 /* Release */,
-				374B93452263270E005524CF /* staging */,
+				3725F1D02268691F00E70B59 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -959,7 +983,7 @@
 			buildConfigurations = (
 				3747D914200DD84200D52082 /* Debug */,
 				3747D915200DD84200D52082 /* Release */,
-				374B93462263270E005524CF /* staging */,
+				3725F1D12268691F00E70B59 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

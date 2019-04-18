@@ -13,11 +13,13 @@ import {
     ImageBackground,
     SectionList,
     TouchableOpacity,
-    NativeModules
+    NativeModules,
+    Alert
 } from 'react-native'
 import { publicStyles } from './../../styles/public'
 import { computeSize } from './../../styles/computeSize'
 import {themeStyles} from '../../styles/theme'
+import codePush from "react-native-code-push";
 
 // 首先获取指定原生模块 前面的Push可随意命名，后面的PushNative必须和iOS导出的模块名一致。
 var Push = NativeModules.MyController
@@ -35,7 +37,7 @@ export default class Home extends Component {
             canLoadMore: false, // 是否可以上拉加载
             isLoadMore: false, // 是否在上拉加载
             list: [
-                {title: '2019-03-20', data: ['111.00', '222.00', '333.00', '444.00']},
+                {title: '2019-03-20', data: ['777.00', '222.00', '333.00', '444.00']},
                 {title:  '2019-03-19', data: ['2231.00', '123.00', '213.00', '2143.00', '1223.00', '532.00', '765.00']},
             ]
         }
@@ -62,7 +64,12 @@ export default class Home extends Component {
             <TouchableOpacity
                 style={styles.xListItemBox}
                 onPress={() => {
-                    navigate.navigate('BillDetail')
+                    if (item == '222.00') {
+                        this.checkVersion.bind(this)
+                    } else {
+                        navigate.navigate('BillDetail')
+                    }
+
                 }}
             >
                 <View style={styles.xListItemInnerBox}>
@@ -140,6 +147,38 @@ export default class Home extends Component {
                 list: data
             })
         }, 2000)
+    }
+
+    /**
+     * alert弹框
+     * @param content
+     */
+    xAlert (content) {
+        Alert.alert(
+            '提示',
+            content,
+            [
+                /**
+                 *  注意参数名字一定不能错
+                 */
+                {text: '确定', onPress: ()=> console.log('点击确定')}
+            ]
+        )
+    }
+
+    checkVersion () {
+        console.log('检测更新')
+        codePush.checkForUpdate()
+            .then( (update) =>{
+                console.log('检测更新ing')
+                if( !update ){
+                    this.xAlert('已经最新了')
+                }else {
+                    this.xAlert('有更新了')
+                }
+            }).catch( error => {
+            this.xAlert(String(error))
+        })
     }
 
     render() {
